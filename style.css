@@ -1,16 +1,19 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
 
 /* Barra de navegacion */
 * {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Tinos', serif;
+
 }
 
 .navbar {
     padding: 2rem;
     background-color: #f5f4f4;
 }
+
 
 
 .navbar-collapse {
@@ -52,7 +55,7 @@ h1 {
 }
 
 .seccion-titulo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 15px 0;
     font-family: 'Press Start 2P', cursive;
 }
@@ -64,6 +67,11 @@ h1 {
 
 .seccion-texto {
     font-size: 1.2rem;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 10px;
 }
 
 .texto-negro {
@@ -112,8 +120,17 @@ h1 {
 }
 
 .hero-inferior {
-    background: #141414;
+    background: #040404;
 }
+
+.madera{
+   fill: #0e67af; 
+}
+.escritorio{
+    stroke: #f5f4f4;
+    stroke-width: 0.7px;
+}
+
 
 /*Sobre mi*/
 
@@ -149,7 +166,7 @@ h1 {
 
 .experiencia i {
     font-size: 2.5rem;
-    color: #7ade30;
+    color: #0e67af; 
     background-color: #111010;
     padding: 4px 15px;
     border-radius: 50%;
@@ -165,7 +182,7 @@ h1 {
 }
 
 .experiencia .descript {
-    font-size: small;
+    font-size: medium;
 }
 
 .badges-contenedor {
@@ -188,21 +205,27 @@ h1 {
 
 .proyectos-recientes {
     padding: 40px;
+    background-color: #e2e1e1;
+
 }
 
+
 .proyectos-recientes img {
-    height: 100%;
+    height: 215px;
     width: 100%;
-    padding: 10px;
-    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
     display: block;
+    border: 1px solid rgb(56, 56, 56);
     transition: all 0.2s ease;
 }
 
 .proyectos-contenedor {
-    padding: 60px;
-    margin-bottom: 40px;
+    padding: 60px 0px 0px 0px;
+    margin-bottom: 20px;
 }
+
 
 .overlay {
     transition: all .2s ease;
@@ -221,19 +244,232 @@ h1 {
     text-decoration-line: underline;
 }
 
-.overlay .iconos-contenedor{
+.overlay .iconos-contenedor {
     display: flex;
 }
 
-.overlay iconify-icon{
+.overlay iconify-icon {
     color: #000000;
-    font-size: 50px;
+    font-size: 3rem;
+
+    margin: auto;
+    margin-top: 10px;
+}
+
+.overlay i {
+    color: #000000;
+    font-size: 3rem;
     margin: 10px;
 }
-.overlay i{
-    color: #000000;
-    font-size: 60px;
+
+/*Articulos*/
+.articulos {
+    min-height: 670px;
+    padding: 30px;
+    background-color: #f5f4f4;
+}
+
+.articulos .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.articulos .card-header {
+    font-weight: bold;
+}
+
+
+
+/*Testimonios*/
+
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+
+}
+
+.carousel-item .container {
+    height: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #5f5e5e;
+}
+
+.carousel-item {
+    min-height: 500px;
+    max-height: 1000px;
+    max-width: 900px;
+    margin-top: auto;
+}
+
+/*Contacto*/
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: #0e67af;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
     margin: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i {
+    color: white;
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+/*Pie de pagina*/
+
+footer {
+    min-height: 500px;
+}
+
+.footer-icono {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.fotter-texto {
+    font-size: 1.1rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all .2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.derechos-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/*Adaptable responsive*/
+
+@media (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .articulos {
+        min-height: 800px;
+    }
+
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 35px;
+    }
+
+    .overlay iconify-icon {
+        font-size: 35px;
+    }
+
+    .proyectos-recientes {
+        padding: 3.5%;
+    }
+
+    .experiencia {
+        padding: 3.5%;
+    }
+
+    .seccion-texto {
+        font-size: medium;
+    }
 }
 
 /*Animaciones hover*/
@@ -245,16 +481,27 @@ h1 {
 
 .proyecto:hover img {
     opacity: .2;
+    height: 225px;
 }
 
 .proyecto:hover .overlay {
     opacity: 1;
 }
 
-/*Adaptable responsive*/
+.contacto button:hover {
+    background-color: white;
+    color: #000000;
+}
 
-@media (min-width: 700px) {
-    .hero-inferior-imagen {
-        max-width: 600px;
-    }
+.contacto button i {
+    color: #000000;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(15, 147, 199);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
 }
