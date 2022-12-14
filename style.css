@@ -24,19 +24,16 @@
 /*Boton arriba*/
 .ir-arriba {
     display: none;
-    padding: 20px;
-    background: transparent;
-    font-size: 20px;
-    color: #111010;
+    padding: 1px 10px;
+    background: #0e67af;
+    font-size: 40px;
+    color: #e6e6e6;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
     right: 20px;
     border-radius: 50%;
-}
-.ir-arriba i{
-    height: 50px;
-    width: 50px;
+    border: 1px solid #fff;
 }
 
 /*Estilos generales*/
@@ -524,6 +521,10 @@ footer {
 .iconos-redes-sociales a:hover {
     background-color: white;
     border: 2px solid rgb(15, 147, 199);
+}
+
+.ir-arriba:hover{
+    border: 1px dashed #00fff8;
 }
 
 .iconos-redes-sociales a:hover i {
