@@ -24,10 +24,8 @@
 /*Boton arriba*/
 .ir-arriba {
     display: none;
-    height: 30px;
-    width: 30px;
     padding: 20px;
-    background: #101010;
+    background: transparent;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
