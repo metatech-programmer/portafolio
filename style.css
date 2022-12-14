@@ -118,7 +118,7 @@ h1 {
     background: #f5f4f4;
     width: 200px;
     animation-name: inicio;
-    animation-duration: 2.2s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     margin-bottom: 45px;
