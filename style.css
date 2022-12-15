@@ -540,10 +540,12 @@ footer {
 @keyframes inicio {
 
     0% {
+        display: none;
         width: 205px;
     }
 
     15% {
+        display: block;
         width: 215px;
     }
 
