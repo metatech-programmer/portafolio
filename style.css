@@ -545,11 +545,11 @@ footer {
     }
 
     15% {
-        display: block;
         width: 215px;
     }
-
+    
     20% {
+        display: contents;
         width: 225px;
     }
 
