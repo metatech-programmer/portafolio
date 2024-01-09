@@ -235,6 +235,7 @@ h1 {
     display: block;
     border: 1px solid rgb(56, 56, 56);
     transition: all 0.2s ease;
+    object-fit: cover;
 }
 
 .proyectos-contenedor {
